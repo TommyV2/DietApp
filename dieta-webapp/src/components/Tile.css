@@ -1,0 +1,39 @@
+/* .btn{
+    color: #000000;
+    --stripe: #8ffa52;
+    --bg: #b4fa83;
+  
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 0%) -50px 0,
+      linear-gradient(225deg, var(--bg) 25%, transparent 0%) -50px 0,
+      linear-gradient(315deg, var(--bg) 25%, transparent 0%),
+      linear-gradient(45deg, var(--bg) 25%, transparent 0%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
+} */
+/* .btn:hover {
+    background-color: #b4fa83;
+  }
+
+.btn:active {
+    background-color: #8ffa52;
+  }
+
+del{
+    color: #000000;
+    --stripe: #ee6255;
+    --bg: #e9927d;
+  
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 0%) -50px 0,
+      linear-gradient(225deg, var(--bg) 25%, transparent 0%) -50px 0,
+      linear-gradient(315deg, var(--bg) 25%, transparent 0%),
+      linear-gradient(45deg, var(--bg) 25%, transparent 0%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
+}
+del:hover {
+    background-color: #e9927d;
+  }
+
+del:active {
+    background-color: #ee6255;
+  } */

@@ -1,0 +1,22 @@
+h4 {
+    background-color: rgb(236, 251, 232);
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    font: Verdana;
+    font-weight: normal;
+    width: 500px;
+    margin-left: 10px;
+    text-align: left;
+    padding: 0px 115px;
+}
+.title {
+    background-color: rgb(204, 241, 195);
+    border-style: solid;
+    color: rgb(0, 0, 0);
+    font: Verdana;
+    font-weight: bold;
+    width: 120px;
+    float: left;
+    font-size: 1.2rem;
+}
+

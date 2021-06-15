@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  postgresql:
+    image: postgres:latest
+    container_name: pg-docker
+    ports:
+      - "5400:5432"
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+    volumes:
+      - ./postgresql.conf:/etc/postgresql/postgresql.conf
+      - ./ProjektDietaDB.sql:/docker-entrypoint-initdb.d/ProjektDietaDB.sql
+    command: postgres -c config_file=/etc/postgresql/postgresql.conf
+    restart: always

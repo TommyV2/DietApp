@@ -1,0 +1,13 @@
+/* .navbar {
+    background-image: linear-gradient( #cef3b5,#f0f5ed);
+  }
+.button{
+    
+    font: 30px Helvetica;   
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.5);
+}   */
+
+.navbar {
+  border-radius: 8px;
+}

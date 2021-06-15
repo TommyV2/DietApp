@@ -1,0 +1,1 @@
+docker-compose -f ./ProjektDietaBaza/docker-compose.yml up

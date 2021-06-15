@@ -1,0 +1,327 @@
+{
+    // _______________________PRODUKT_______________________
+    "product": {
+        "id": "uniqueID",
+        "owner": "ownerID",
+        "source": "IZZ",
+        "name": "Produkt",
+        "kcal": 354,
+        "carbohydrates": 54.4,
+        "sugar": 12.2,
+        "fat": 9.6,
+        "saturated_fat": 3.1,
+        "protein": 8.9,
+        "fiber": 4.3,
+        "home_measure": [
+            {
+                "name": "łyżka",
+                "mass": 5
+            },
+            {
+                "name": "szklanka",
+                "mass": 150
+            }
+        ],
+        "nutrients": [
+            {
+                "name": "Magnez",
+                "amount": 23.3,
+                "unit": "mg"
+            },
+            {
+                "name": "Żelazo",
+                "amount": 3.3,
+                "unit": "mg"
+            }
+        ]
+    },
+    // _______________________PRZEPIS_______________________
+    "recipe": {
+        "id": "uniqueID",
+        "owner": "ownerID",
+        "name": "Recipe for sth",
+        "instruction": "Do this then do other task.",
+        "img_url": "url for photo",
+        "time": 35,
+        "portions": 4,
+        "portion": 258,
+        "kcal": 354,
+        "carbohydrates": 54.4,
+        "sugar": 12.2,
+        "fat": 9.6,
+        "saturated_fat": 3.1,
+        "protein": 8.9,
+        "fiber": 4.3,
+        "nutrients": [
+            {
+                "name": "Magnez",
+                "amount": 23.3,
+                "unit": "mg"
+            },
+            {
+                "name": "Żelazo",
+                "amount": 3.3,
+                "unit": "mg"
+            }
+        ],
+        "products": [
+            {
+                "product_id": "UniqueProduct0ID",
+                "amount": 55
+            },
+            {
+                "product_id": "UniqueProduct1ID",
+                "amount": 432
+            },
+            {
+                "product_id": "UniqueProduct2ID",
+                "amount": 155
+            }
+        ],
+        "listed": true
+    },
+    // _______________________POSIŁEK_______________________
+    "meal": {
+        "id": "uniqueID",
+        "diet_plan_id": "unique-diet-plan-id",
+        "position": 0,
+        "recipes": [
+            {
+                "recipe_id": "uniqueRecipe0ID",
+                "portions_amount": 1
+            }
+        ]
+    },
+    // _______________________JADŁOSPIS_______________________
+    "diet_plan": {
+        "diet_plan_id": "unique-diet-plan-id",
+        "dietician_id": "unique-dietician-id",
+        "dietician_name": "name",
+        "dietician_surname": "surname",
+        "customer_id": "unique-coustomer-id",
+        "customer_name": "name",
+        "customer_surname": "surname",
+        "demands_template_id": "unique_demands_template_id",
+        "kcal_target": 2320,
+        "date_send": "22-03-2021",
+        "date_start": "25-03-2021",
+        "days": [
+            {
+                "meals": [
+                    {
+                        "meal_id": "unique-meal0-id"
+                    },
+                    {
+                        "meal_id": "unique-meal1-id"
+                    },
+                    {
+                        "meal_id": "unique-meal2-id"
+                    }
+                ],
+                "names_set": "name-set-id",
+                "day_number": 1
+            },
+            {
+                "meals": [
+                    {
+                        "meal_id": "unique-meal0-id"
+                    },
+                    {
+                        "meal_id": "unique-meal1-id"
+                    },
+                    {
+                        "meal_id": "unique-meal2-id"
+                    }
+                ],
+                "names_set": "name-set-id",
+                "day_number": 2
+            },
+            {
+                "meals": [
+                    {
+                        "meal_id": "unique-meal0-id"
+                    },
+                    {
+                        "meal_id": "unique-meal1-id"
+                    },
+                    {
+                        "meal_id": "unique-meal2-id"
+                    }
+                ],
+                "names_set": "name-set-id",
+                "day_number": 3
+            }
+        ],
+        "as_template": false
+    },
+    // _______________________ZALECENIA_DIETETYCZNE_______________________
+    "diet_recommendation": {
+        "dietician_id": "unique-dietician-id",
+        "dietician_name": "name",
+        "dietician_surname": "surname",
+        "customer_id": "unique-coustomer-id",
+        "customer_name": "name",
+        "customer_surname": "surname",
+        "demands_template_id": "unique_demands_template_id",
+        "date_send": "22-03-2021",
+        "content": "some advices. Its very very very very very long text. Maybe with html ;)"
+    },
+    // _______________________KLIENT_______________________
+    "customer": {
+        "customer_id": "unique-customer-id",
+        "name": "name",
+        "surname": "surname",
+        "username": "username",
+        "email": "mail@mail.com",
+        "phone_number": "543543543",
+        "birth_date": "21-10-1999",
+        "gender": "male",
+        "city": "Waw-a",
+        "photo_url": "url-for-photo",
+        "dietician": "unique-relation-id", // null - jeśli nie ma
+        "trainer": "unique-relation-id" // null - jeśli nie ma
+    },
+    // _______________________SPECJALISTA-DIETETYK/TRENER_______________________
+    "specialist": {
+        "specialist_id": "unique-specialist-id",
+        "name": "name",
+        "surname": "surname",
+        "username": "username",
+        "email": "mail@mail.com",
+        "phone_number": "543543543",
+        "birth_date": "1999-02-21",
+        "gender": "male",
+        "city": "Waw-a",
+        "photo_url": "url-for-photo",
+        "role": 0, //0-dietetyk,1-trener,2-dietetyk/trener
+        "customers": [
+            "unique-relation-id",
+            "unique-relation-id",
+            "unique-relation-id"
+        ]
+    },
+    //
+    "relation":{
+        "relation_id": "unique-relation-id",
+        "specialist_id":"unique-specialist-id",
+        "customer_id":"unique-coustomer-id",
+        "type": 0, // 0 - dietetyczna, 1 -treningowa, 2 - dietetyczno/treningowa
+        "status": 0 // 0 - rozpoczęta, 1 - w trakcie, 2 - zakończona
+    },
+    // _______________________POMIAR_CIAŁA_______________________
+    "body_measurement": {
+        "measurement_id": "unique-measurement-id",
+        "customer_id": "unique-coustomer-id",
+        "height": 176,
+        "weight": 75,
+        "neck": 40,
+        "chest": 102,
+        "waist": 80,
+        "belly": 82,
+        "wrist": 22,
+        "hips": 84,
+        "thigh": 64,
+        "calf": 32,
+        "ankle": 28,
+        "date": "21-10-1999"
+    },
+    // _______________________POMIARY_CIAŁA_______________________
+    "body_measurements": [
+        {
+            "measurement_id": "unique-measurement-id",
+            "customer_id": "unique-coustomer-id",
+            "date": "21-10-1999"
+        },
+        {
+            "measurement_id": "unique-measurement-id",
+            "customer_id": "unique-coustomer-id",
+            "date": "30-10-1999"
+        }
+    ],
+    // _______________________PREFERENCJE_ŻYWIENIOWE_______________________ może rozwinięte potem do ankiety/wywiadu
+    "food_preferences": {},
+    // _______________________PRODUKTY_______________________
+    "products": [
+        {
+            "id": "uniqueID",
+            "owner": "ownerID",
+            "source": "IZZ",
+            "name": "Produkt",
+            "kcal": 354,
+            "carbohydrates": 54.4,
+            "fat": 9.6,
+            "protein": 8.9,
+            "fiber": 4.3
+        },
+        {
+            "id": "uniqueID",
+            "owner": "ownerID",
+            "source": "IZZ",
+            "name": "Produkt",
+            "kcal": 354,
+            "carbohydrates": 54.4,
+            "fat": 9.6,
+            "protein": 8.9,
+            "fiber": 4.3
+        },
+        {
+            "id": "uniqueID",
+            "owner": "ownerID",
+            "source": "IZZ",
+            "name": "Produkt",
+            "kcal": 354,
+            "carbohydrates": 54.4,
+            "fat": 9.6,
+            "protein": 8.9,
+            "fiber": 4.3
+        }
+    ],
+    // _______________________PRZEPISY_______________________
+    "recipes": [
+        {
+            "id": "uniqueID",
+            "owner": "ownerID",
+            "name": "Recipe for sth",
+            "time": 35,
+            "portions": 4,
+            "portion": 258,
+            "kcal": 354,
+            "carbohydrates": 54.4,
+            "fat": 9.6,
+            "protein": 8.9,
+            "fiber": 4.3
+        },
+        {
+            "id": "uniqueID",
+            "owner": "ownerID",
+            "name": "Recipe for sth",
+            "time": 35,
+            "portions": 4,
+            "portion": 258,
+            "kcal": 354,
+            "carbohydrates": 54.4,
+            "fat": 9.6,
+            "protein": 8.9,
+            "fiber": 4.3
+        },
+        {
+            "id": "uniqueID",
+            "owner": "ownerID",
+            "name": "Recipe for sth",
+            "time": 35,
+            "portions": 4,
+            "portion": 258,
+            "kcal": 354,
+            "carbohydrates": 54.4,
+            "fat": 9.6,
+            "protein": 8.9,
+            "fiber": 4.3
+        }
+    ],
+    // _______________________ĆWICZENIE_______________________
+    "exercise": {},
+    // _______________________ĆWICZENIA_______________________
+    "many_exercise": {},
+    // _______________________PLAN_TRENINGOWY_______________________
+    "training_plan": {}
+}

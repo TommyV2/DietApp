@@ -1,0 +1,14 @@
+.custom{
+    text-align: center;
+    font: Verdana;
+    font-size: 5px;
+    width: 400px;
+    height: 200px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border: 2px solid rgba(63,164,63,0.47);
+}
+.panel{
+    width: 25rem;
+}
